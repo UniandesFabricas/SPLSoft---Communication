@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+	<properties>
+		<graphics key="showhiddenfeatures" value="true"/>
+		<graphics key="legendautolayout" value="true"/>
+		<graphics key="showshortnames" value="false"/>
+		<graphics key="layout" value="horizontal"/>
+		<graphics key="showcollapsedconstraints" value="true"/>
+		<graphics key="legendhidden" value="false"/>
+		<graphics key="layoutalgorithm" value="1"/>
+	</properties>
+	<struct>
+		<and abstract="true" mandatory="true" name="SPLSoftCommunication">
+			<and mandatory="true" name="Accesibilidad">
+				<or mandatory="true" name="Plataformas">
+					<feature name="Web"/>
+					<feature name="App moviles"/>
+					<feature name="Sistema telefonico"/>
+				</or>
+				<feature name="Marketplace "/>
+				<feature name="subtítulos y accesos directos"/>
+			</and>
+			<and mandatory="true" name="Reuniones">
+				<feature mandatory="true" name="Audioconferencia"/>
+				<and name="Videoconferencia">
+					<feature name="Video en HD"/>
+				</and>
+				<feature name="Eventos en vivo"/>
+				<alt mandatory="true" name="acciones">
+					<feature name="Transcripción de reunión "/>
+					<feature name="Grabación de reunión "/>
+				</alt>
+				<feature name="Programacion"/>
+			</and>
+			<and mandatory="true" name="Mensajeria">
+				<and mandatory="true" name="Chat">
+					<feature mandatory="true" name="Chat en vivo "/>
+					<feature mandatory="true" name="Chat grupal"/>
+					<feature name="Almacenamiento histórico"/>
+				</and>
+				<and mandatory="true" name="Documentos">
+					<feature name="Colaboración con archivos "/>
+					<feature mandatory="true" name="Compartir documentos"/>
+				</and>
+				<feature name="Herramientas de dibujo"/>
+			</and>
+		</and>
+	</struct>
+	<constraints>
+		<rule>
+			<imp>
+				<var>Eventos en vivo</var>
+				<var>Videoconferencia</var>
+			</imp>
+		</rule>
+	</constraints>
+</featureModel>

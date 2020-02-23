@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+	<feature automatic="selected" name="SPLSoftCommunication"/>
+	<feature automatic="selected" name="Accesibilidad"/>
+	<feature automatic="selected" name="Plataformas"/>
+	<feature manual="selected" name="Web"/>
+	<feature manual="selected" name="App moviles"/>
+	<feature name="Sistema telefonico"/>
+	<feature name="Marketplace "/>
+	<feature name="subtítulos y accesos directos"/>
+	<feature automatic="selected" name="Reuniones"/>
+	<feature automatic="selected" name="Audioconferencia"/>
+	<feature name="Video"/>
+	<feature name="Videoconferencia"/>
+	<feature name="Video en HD"/>
+	<feature name="Eventos en vivo"/>
+	<feature automatic="selected" name="acciones"/>
+	<feature automatic="unselected" name="Transcripción de reunión "/>
+	<feature manual="selected" name="Grabación de reunión "/>
+	<feature name="Programacion"/>
+	<feature automatic="selected" name="Mensajeria"/>
+	<feature automatic="selected" name="Chat"/>
+	<feature automatic="selected" name="Chat en vivo "/>
+	<feature automatic="selected" name="Chat grupal"/>
+	<feature name="Almacenamiento histórico"/>
+	<feature automatic="selected" name="Documentos"/>
+	<feature name="Colaboración con archivos "/>
+	<feature automatic="selected" name="Compartir documentos"/>
+	<feature name="Herramientas de dibujo"/>
+</configuration>
